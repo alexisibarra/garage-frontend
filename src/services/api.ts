@@ -1,4 +1,6 @@
-export const getList = async () => {
-  const response = await fetch('http://localhost:3000/')
-  return response.json()
-}
+import axios from "axios";
+import { ENV } from "../../env";
+
+export const API_BASE = ENV.API_URL || "";
+
+export const getAllCars = async () => await axios.get(API_BASE);
