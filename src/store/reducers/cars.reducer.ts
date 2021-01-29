@@ -2,7 +2,7 @@ import { AxiosResponse } from "axios";
 import {
   getObjectByIdFromArray,
   IObjectById,
-} from "../../getObjectByIdFromArray";
+} from "../../Utils/getObjectByIdFromArray";
 
 import { TDispatch } from "../../interfaces/IDispatch";
 import { getAllCars } from "../../services/api";
