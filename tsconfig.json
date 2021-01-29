@@ -7,6 +7,29 @@
     "noEmit": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "lint": {
+          // "unknownProperties": "ignore", // "ignore" | "warning" | "error"
+          "validProperties": [
+            "backgroundColor",
+            "elevation",
+            "flexDirection",
+            "fontFamily",
+            "fontSize",
+            "fontWeight",
+            "justifyContent",
+            "marginHorizontal",
+            "marginVertical",
+            "paddingHorizontal",
+            "paddingVertical",
+            "shadowOpacity",
+            "shadowRadius"
+          ]
+        }
+      }
+    ]
   }
 }
