@@ -5,7 +5,7 @@ import { useScreenDimensions } from "../../hooks/useScreenDimensions";
 import { Image } from "./styles";
 
 interface Props {
-  source: string;
+  source?: string;
 }
 
 // Cover has to fill the whole card area.
@@ -16,7 +16,7 @@ const Cover = ({ source }: Props) => {
     <Image
       source={{ uri: source }}
       style={{
-        width: size.width,
+        width: "100%",
         height: size.width * 0.67,
       }}
     />
